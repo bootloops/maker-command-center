@@ -1,0 +1,24 @@
+{
+  "app": "maker-command-center",
+  "patch": "006",
+  "module": "Music Studio v1",
+  "requiresPatches": [
+    "001",
+    "002",
+    "003",
+    "004",
+    "005"
+  ],
+  "changes": [
+    "music-studio.html",
+    "styles/music-studio.css",
+    "js/music/core.js",
+    "js/music/studio.js",
+    "js/main.js",
+    "js/exportImport.js",
+    "service-worker.js",
+    "PATCH-006.md",
+    "VALIDATION.json"
+  ],
+  "storage": "Existing IndexedDB meta store, music: namespace"
+}

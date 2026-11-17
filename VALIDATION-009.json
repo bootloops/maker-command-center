@@ -1,0 +1,8 @@
+{
+  "picker_module_syntax": "passed",
+  "patched_action_card_syntax": "passed",
+  "installer_idempotence": "passed",
+  "unexpected_source_no_write": "passed",
+  "destination_separate_from_thread_project": "source assertion passed",
+  "browser_e2e": "not run"
+}

@@ -1,0 +1,7 @@
+{
+  "ui_module_syntax": "passed",
+  "installer_generated_source_syntax": "passed",
+  "installer_idempotence": "passed",
+  "branch_tests": "6 branch assertions passed",
+  "live_browser_ollama": "not tested"
+}

@@ -1,0 +1,7 @@
+{
+  "logic_tests": "12 assertions passed: duplicate/missing IDs, canonical matching, text preservation, protected sections, invalid alternative isolation, strict missing-content errors.",
+  "syntax": "validator and installer-generated recovery UI passed",
+  "installer": "idempotence and mismatched-source preservation passed",
+  "checkpoint_order": "raw capture before schema validation passed",
+  "live_browser_ollama": "not tested"
+}

@@ -1,0 +1,7 @@
+{
+  "module_and_installer_generated_syntax": "passed",
+  "tests": "8 creative-default, prompt and craft-note assertions passed",
+  "installer_idempotence": "passed",
+  "unexpected_source_preservation": "passed",
+  "live_browser_ollama": "not tested"
+}

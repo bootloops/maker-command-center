@@ -1,0 +1,12 @@
+Maker Command Center — Patch 005
+
+Apply AFTER patches 001–004. Replace js/features/aiWorkspace.js and add styles/workspace.css.
+The workspace module loads the new scoped CSS automatically. No HTML changes or data migration.
+
+Changes: bounded chat, independent message scrolling, compact sidebar controls, persistent copyable errors, guarded sends, exact editable context preview, strict general-vs-project thread isolation, restored action cards, per-thread task deduplication, no automatic destructive operations. The original response is deliberately retained as plain text so malformed output is not silently deleted. Markdown rendering is not included.
+
+Deployment: commit these two files and deploy. With the original cache-first service worker, a reload may still use old JS. In DevTools > Application > Service Workers, unregister the worker and delete ONLY the maker-command-center Cache Storage cache; then reload. DO NOT clear site data or IndexedDB. Export a JSON backup first.
+
+Checks performed: archive integrity, JavaScript syntax if Node is installed. No live Ollama or browser end-to-end tests performed in this environment.
+
+Test: long reply scrolls within chat; controls remain normal size; send composer stays visible. Model switch creates no extra workspace. Navigate away/back: completed conversation is restored. Suggested tasks show after restoration. Create a task twice: existing AI action key prevents a second record. Error panel remains until dismissed.

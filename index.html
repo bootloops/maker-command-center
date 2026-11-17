@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cyberpunk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Maker Command Center</title>
+<meta name="description" content="A local-first command center for makers, builders, and experimenters.">
+<meta name="theme-color" content="#05070d">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles/theme.css">
+<link rel="stylesheet" href="./styles/layout.css">
+<link rel="stylesheet" href="./styles/components.css">
+<link rel="stylesheet" href="./styles/ai.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+<div class="brand"><div class="brand-mark">MCC</div><div><div class="brand-name">Maker Command Center</div><div class="brand-sub">local-first build OS</div></div></div>
+<nav class="nav">
+<a href="#/" data-route="/"><span>◈</span> Mission Control</a>
+<a href="#/projects" data-route="/projects"><span>▤</span> Projects</a>
+<a href="#/ideas" data-route="/ideas"><span>✦</span> Idea Inbox</a>
+<a href="#/builds" data-route="/builds"><span>⬡</span> Build Lab</a>
+<a href="#/tests" data-route="/tests"><span>⚗</span> Test Logs</a>
+<a href="#/parts" data-route="/parts"><span>⚙</span> Parts</a>
+<a href="#/references" data-route="/references"><span>⌘</span> References</a>
+<a href="#/ai" data-route="/ai"><span>◉</span> AI Workspace</a>
+<a href="#/settings" data-route="/settings"><span>☰</span> Settings</a>
+</nav>
+<div class="sidebar-footer">
+<button class="btn ghost full" id="quickCapture">+ Quick Capture</button>
+<div class="ai-status" id="aiStatus">AI: not configured</div>
+</div>
+</aside>
+<main class="main">
+<header class="topbar">
+<button class="icon-btn mobile-only" id="menuButton" aria-label="Open menu">☰</button>
+<input id="globalSearch" class="search" type="search" placeholder="Search missions, tasks, builds, tests, parts…" autocomplete="off">
+<button class="btn primary" id="newProjectButton">+ New Mission</button>
+</header>
+<section id="view" class="view" aria-live="polite"></section>
+</main>
+</div>
+<div id="modalRoot"></div>
+<div id="toastRoot" class="toast-root"></div>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

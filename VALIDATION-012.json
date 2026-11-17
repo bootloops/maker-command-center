@@ -1,0 +1,6 @@
+{
+  "module_and_patched_syntax": "passed",
+  "installer_idempotence": "passed",
+  "pure_helpers": "9 naming/reorder assertions passed",
+  "browser_e2e": "not run"
+}

@@ -1,0 +1,6 @@
+{
+  "syntax": "new modules and installer-modified source passed",
+  "installer_idempotence": "passed",
+  "no_reload_or_request_restart_in_dock_repair": "source assertions passed",
+  "browser_navigation_ollama": "not run"
+}

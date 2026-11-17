@@ -1,0 +1,26 @@
+{
+  "js/music/core.js": {
+    "syntax": true,
+    "error": ""
+  },
+  "js/music/studio.js": {
+    "syntax": true,
+    "error": ""
+  },
+  "js/main.js": {
+    "syntax": true,
+    "error": ""
+  },
+  "js/exportImport.js": {
+    "syntax": true,
+    "error": ""
+  },
+  "service-worker.js": {
+    "syntax": true,
+    "error": ""
+  },
+  "logic_tests": "7 core assertions passed",
+  "browser_e2e": "Not run",
+  "live_ollama": "Not run",
+  "requires": "Existing MCC release plus patches 001\u2013005"
+}

@@ -1,0 +1,8 @@
+{
+  "integration_module_syntax": "passed",
+  "patched_modules_syntax": "passed",
+  "installer_idempotence": "passed",
+  "progress_relocation": "source assertion passed",
+  "stable_song_id_routing": "source assertion passed",
+  "browser_iframe_ollama_e2e": "not run"
+}
